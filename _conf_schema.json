@@ -1,0 +1,14 @@
+{
+  "enable_at_tool": {
+    "description": "是否启用可供LLM调用的@工具。禁用后，LLM将无法使用此功能。",
+    "type": "bool",
+    "default": true,
+    "hint": "开启后，LLM可以根据对话内容自主决定是否@某人。"
+  },
+  "at_prefix_message": {
+    "description": "在@用户时，自动添加在消息前的文本内容。留空则不添加。",
+    "type": "string",
+    "default": "",
+    "hint": "例如可以设置为“收到一条给你的消息：”，最终效果为“@张三 收到一条给你的消息：xxxxx”"
+  }
+}
